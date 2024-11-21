@@ -76,7 +76,8 @@
     <section class="max-w-full max-h-auto bg-dark-bg pt-24 flex flex-row justify-around" id="transicaoEnergetica">
         <div
             class="max-w-7xl mx-auto flex gap-4 items-center flex-col text-center lg:text-left lg:w-3/4 2xl:flex-row xl:w-full xl:flex-row 2xl:items-center 2xl:gap-20">
-            <section class=" text-white flex flex-col gap-8 mb-8 w-full text-center px-1 lg:text-start lg:px-4 2xl:justify-center">
+            <section
+                class=" text-white flex flex-col gap-8 mb-8 w-full text-center px-1 lg:text-start lg:px-4 2xl:justify-center">
 
                 <h1 class="font-title text-5xl font-bold w-full">Transição Energética</h1>
 
@@ -129,7 +130,8 @@
     <div class="max-w-7xl mx-auto flex justify-center gap-5 text-white flex-col 2xl:items-center">
         <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white ">
             <section class="w-full flex flex-col gap-10 items-center lg:flex-row">
-                <div class="img w-full flex flex-col gap-4 hidden-left px-1 sm:justify-center order-last lg:order-first">
+                <div
+                    class="img w-full flex flex-col gap-4 hidden-left px-1 sm:justify-center order-last lg:order-first">
                     <img src="./src/imgs/linha-do-tempo-fourier.png"
                         alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
                     <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
@@ -221,13 +223,16 @@
 
                 <div class="txt font-text text-8xl font-bold w-full hidden-left order-first lg:order-1 text-center">
                     1997
-                </div>  
+                </div>
             </section>
         </div>
 
         <section class="max-w-full flex flex-col mt-12 items-center justify-center gap-4 px-4 xl:px-4">
-            <h1 class="text-main-green w-full font-bold font-text text-6xl text-center lg:text-9xl lg:mt-8 2xl:text-center">PRESENTE</h1>
-            <p class="text-gray-200/90 font-text text-base text-center lg:text-left xl:text-start xl:text-lg">O protocolo de Kyoto não foi
+            <h1
+                class="text-main-green w-full font-bold font-text text-6xl text-center lg:text-9xl lg:mt-8 2xl:text-center">
+                PRESENTE</h1>
+            <p class="text-gray-200/90 font-text text-base text-center lg:text-left xl:text-start xl:text-lg">O
+                protocolo de Kyoto não foi
                 ratificado pelos Estados
                 Unidos e
                 depois foi substituído pelo acordo de Paris. EM 04/11/2020 os EUA saíram do acordo de Paris e só
@@ -237,12 +242,52 @@
                 gases de efeito estufa estão nos níveis mais altos em 2 milhões de anos.
                 A ONU alerta que, sem medidas concretas, o mundo pode chegar a um aumento de <span
                     class="font-bold">3°C.</span></p>
-            <p class="text-gray-200/90 font-text text-base text-center lg:text-start xl:w-full xl:text-lg"> A baixo, temos um gráfico que
+            <p class="text-gray-200/90 font-text text-base text-center lg:text-start xl:w-full xl:text-lg"> A baixo,
+                temos um gráfico que
                 ilustra a projeção para o aumento da tempertura média global, em relação à média existente durante o
                 período pré-industrial:</p>
         </section>
 
+        <section class="chart-container max-w-full flex flex-col mt-12 items-center justify-center gap-4 p-4">
+            <canvas id="line-chart"></canvas>
 
+            <p class="text-gray-200/90 font-text text-base text-center lg:text-left xl:text-lg"> Nele podemos ver em
+                primeira
+                instância, o limite de temperatura imposto pelo acordo de Paris, sendo que esse mesmo limite
+                (preferencialemente sendo de abaixo de 1,5°C), deveria se sustentar até 2100. Contudo, vemos que já no
+                ano de 2024, estamos acima do desejável, sendo que, de acordo com projeções, atinigiremos o limite de
+                2100 em torno de 70 anos antes. Além disso, se o cenário de emissões se manter <span
+                    class="font-bold">intermediário</span>, teremos o terrível número apontado em 2050. Em cenários mais
+                pessimistas, de <span class="font-bold">emissões altas</span>, poderemos chegar ao número de <span
+                    class="font-bold">5,7°C</span> acima dos níveis pré-industriais.</p>
+        </section>
+
+    </div>
+
+    <section class="max-w-7xl max-h-auto py-32 flex flex-row font-text text-center md:px-8 2xl:max-w-full">
+        <div class="max-w-7xl px-2 mx-auto flex flex-col justify-start gap-4 items-start lg:text-left">
+            <h1 class="font-bold text-4xl text-white sm:text-5xl xl:text-6xl">POR ISSO, NÓS DA VOLTARIS DECIDIMOS QUE:
+            </h1>
+            <p class="text-gray-200/90 font-text text-base xl:text-lg">Toda população deve estar ciente quais são as
+                consequências que
+                iremos enfrentar,
+                mas principalmente como podemos <span class="text-white">REVERTER</span> essa situação e
+                garantir um
+                futuro melhor para nós mesmos e
+                para as próximas gerações.</p>
+            <p class="text-gray-200/90 font-text text-base xl:text-lg">Com isso em mente, disponibilizamos cursos de
+                curta
+                duração
+                (Curtos mesmo) de até 3 horas, com documentários, vídeos curtos e jogos interativos que
+                promovem
+                ações sustentáveis que melhoram nosso consumo de energia no dia a dia, para qualquer um de
+                nós
+                colocar em prática e fazer a diferença nas nossas comunidades. </p>
+        </div>
+    </section>
+    </section>
+
+    
 
 </body>
 
