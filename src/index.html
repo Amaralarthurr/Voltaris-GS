@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page GS</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/arrow.css">
+</head>
+
+<body class="bg-dark-bg">
+
+    <section class="max-w-full">
+        <video class="absolute top-0 left-0 w-full h-full object-cover -z-10" autoplay muted loop>
+            <source src="./videos/bg-video-energy.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <header class="p-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <div>
+                    <a href=""><img src="./imgs/Logo_voltaris_verde.png" alt="Logo voltaris verde"></a>
+                </div>
+
+                <!-- Menu para telas grandes -->
+                <nav class="hidden md:flex space-x-8 font-text text-lg lg:text-xl transition-colors">
+                    <a href="#transicaoEnergetica" class="text-white hover:text-main-green">Conscientização</a>
+                    <a href="#sobreNos" class="text-white hover:text-main-green">Sobre</a>
+                    <a href="#cursos" class="text-white hover:text-main-green">Serviços</a>
+                    <a href="#contato" class="text-white hover:text-main-green">Contato</a>
+                </nav>
+
+
+                <!-- Menu sanduíche -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuButton" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu móvel -->
+            <div id="mobileMenu" class="md:hidden hidden ">
+                <nav
+                    class="space-y-4 flex flex-col p-4 mt-4 w-full font-text bg-[rgba(77,41,93,0.46)] rounded-[16px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[12.9px] border border-[rgba(77,41,93,1)]">
+                    <a href="#transicaoEnergetica"
+                        class="text-white hover:text-main-green text-right ">Conscientização</a>
+                    <a href="#sobreNos" class="text-white hover:text-main-green text-right">Sobre</a>
+                    <a href="#cursos" class="text-white hover:text-main-green text-right">Serviços</a>
+                    <a href="#contato" class="text-white hover:text-main-green text-right">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+    </section>
+
+    <section class="h-screen max-w-full flex flex-row items-center">
+        <div class="w-full mx-auto flex justify-end gap-4 flex-col h-1/2">
+            <p
+                class="font-title px-2 text-xl leading-tight text-main-green text-wrap text-center md:text-3xl lg:text-4xl 2xl:text-5xl">
+                Juntos podemos renovar a maneira que consumimos energia!</p>
+            <div class="hidden justify-start items-start md:flex">
+                <a href=""><img src="./imgs/seta-para-baixo-verde-menu-hero.png" alt="" class="arrow-down"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-full max-h-auto bg-dark-bg pt-24 flex flex-row justify-around" id="transicaoEnergetica">
+        <div
+            class="sm:max-w-7xl mx-auto flex gap-4 items-center flex-col text-center lg:text-left lg:w-3/4 2xl:flex-row xl:w-full xl:flex-row 2xl:items-center 2xl:gap-20 max-w-full px-2 sm:px-4">
+            <section
+                class=" text-white flex flex-col gap-8 mb-8 w-full text-center px-1 lg:text-start lg:px-4 2xl:justify-center max-w-full">
+
+                <h1 class="font-title text-4xl font-bold w-full sm:text-5xl">Transição Energética</h1>
+
+                <div class="font-text text-lg flex flex-col gap-5 text-gray-200/90 max-w-full lg:w-full">
+                    <p>A transição energética dos combustíveis fósseis para fontes sustentáveis representa uma
+                        mudança
+                        essencial para garantir o futuro do nosso planeta. Diante do impacto ambiental dos combustíveis
+                        tradicionais, alternativas como o Hidrogênio Verde e a tecnologia de Sal Fundido surgem como
+                        protagonistas para uma matriz energética limpa e eficiente. Estas inovações oferecem não só uma
+                        redução significativa nas emissões de carbono, mas também um caminho sustentável para o
+                        abastecimento energético em larga escala, com potencial de transformar setores inteiros da
+                        economia.
+                    </p>
+                    <p>O Hidrogênio Verde, produzido a partir de fontes renováveis, é uma opção promissora para
+                        aplicações industriais e transportes pesados, reduzindo drasticamente as emissões de poluentes.
+                        Já a tecnologia de Sal Fundido, com sua alta capacidade de armazenamento de energia térmica,
+                        possibilita um fornecimento contínuo e confiável, mesmo em períodos sem sol ou vento. Apostar em
+                        energias como estas é investir em um futuro limpo, sustentável e seguro, onde a energia se torna
+                        uma aliada do meio ambiente e da sociedade.
+                    </p>
+                    <p class="font-bold text-xl text-white">VENHA COM NÓS E RECEBA UM BRINDE E UM CERTIFICADO</p>
+                    <div class="mt-10">
+                        <a href=""
+                            class="py-4 px-3 border border-main-green font-bold text-xl bg-main-green rounded-3xl text-black hover:bg-dark-bg hover hover:border-main-green hover:text-white hover:border transition-all">Quero
+                            Participar!</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-bg py-5 flex flex-col items-start justify-center gap-4 max-w-full 2xl:w-1/2 px-4 sm:w-full sm:px-6">
+                <h1 class="text-main-green w-full font-bold text-xl text-wrap">Consulta de Qualidade do Ar</h1>
+                <form class="flex flex-col gap-6 w-full items-center justify-center max-w-full">
+
+                    <p class="font-text text-base text-white w-full text-start" for="state">Escolha um Estado:</p>
+
+                    <select id="state" name="state"
+                        class="w-full p-2 text-lg border border-main-green rounded-xl bg-transparent text-gray-200/50 focus:border-main-green mb-2">
+                        <option value="">Selecione um estado</option>
+                    </select>
+
+                    <p class="font-text text-base text-white w-full text-start">Escolha uma Cidade:</p>
+
+                    <select id="city" name="city" disabled
+                        class="w-full p-2 text-lg border border-main-green rounded-xl bg-transparent text-gray-200/50 focus:border-main-green mb-2">
+                        <option value="">Selecione uma cidade</option>
+                    </select>
+
+                    <button id="search" disabled
+                        class="w-full border border-main-green transition-all py-3 mt-4 bg-main-green text-black font-bold rounded-2xl hover:border hover:border-main-green
+                         hover:text-white focus:outline-none hover:bg-transparent">
+                        Buscar Qualidade do Ar
+                    </button>
+
+                    <div id="result" class=" text-white max-w-full gap-4 text-base text-start w-full result hidden">
+                        <h2 class="font-text mb-2">Resultado:</h2>
+                        <p id="air-quality" class="font-text"></p>
+                    </div>
+
+                    <div id="error" class="error hidden mt-6 p-4 font-text bg-red-100 border border-red-500 text-red-700 rounded"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-full max-h-auto bg-dark-bg flex flex-row justify-around" id="sobreNos">
+        <div class="max-w-7xl mx-auto flex justify-between gap-4 items-center">
+            <div class="gap-2 flex flex-col mt-32 text-white text-center md:p-2 px-1">
+                <h1 class="text-5xl font-title lg:text-6xl">Sobre <span class="text-main-green">nós</span></h1>
+                <p class="text-base text-gray-200/90 p-3 lg:text-xl">A VOLTARIS surgiu em 2024, buscando uma solução
+                    para
+                    conscientizar
+                    o máximo de pessoas sobre os fatos abaixo:</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="max-w-7xl mx-auto flex justify-center gap-5 text-white flex-col 2xl:items-center">
+        <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white ">
+            <section class="w-full flex flex-col gap-10 items-center lg:flex-row">
+                <div
+                    class="img w-full flex flex-col gap-4 hidden-left px-1 sm:justify-center order-last lg:order-first">
+                    <img src="./imgs/linha-do-tempo-fourier.png"
+                        alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
+                    <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
+                        Joseph Fourier descreve o "efeito estufa" como um fenômeno natural que mantém a Terra aquecida,
+                        um conceito fundamental para o entendimento das mudanças climáticas.</p>
+                </div>
+
+                <!-- <div class="linha-do-tempo-line h-full w-1 bg-gray-50/55 hidden lg:flex"></div> -->
+
+                <div class="txt font-text text-8xl font-bold w-full hidden-left text-center order-first lg:order-last">
+                    1824
+                </div>
+            </section>
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white">
+            <section class="w-full flex gap-10 flex-col items-center lg:flex-row">
+                <div class="txt font-text text-8xl font-bold w-full hidden-right text-center">
+                    1896
+                </div>
+
+                <!-- <div class="linha-do-tempo-line h-full w-1 bg-gray-50/55 hidden lg:flex"></div> -->
+
+                <div class="img w-full flex flex-col gap-4 hidden-right px-1">
+                    <img src="./imgs/linha-do-tempo-svante-arrhenius.png"
+                        alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
+                    <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
+                        Svante Arrhenius identifica que a queima de carvão aumenta o efeito estufa, sugerindo que isso
+                        poderia aquecer o planeta.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white ">
+            <section class="w-full flex gap-10 flex-col items-center lg:flex-row">
+                <div class="img w-full flex flex-col gap-4 hidden-left order-3 lg:order-1 px-1">
+                    <img src="./imgs/linha-do-tempo-efeito-estufa.png"
+                        alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
+                    <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
+                        Joseph Fourier descreve o "efeito
+                        estufa"
+                        como um fenômeno natural que mantém a Terra aquecida, um conceito fundamental para o
+                        entendimento das mudanças climáticas.</p>
+                </div>
+
+                <!-- <div class="linha-do-tempo-line h-full w-1 bg-gray-50/55 hidden lg:flex lg:order-1"></div> -->
+
+                <div class="txt font-text text-8xl font-bold w-full hidden-left order-first lg:order-1 text-center">
+                    1958
+                </div>
+            </section>
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white">
+            <section class="w-full flex gap-10 flex-col items-center lg:flex-row">
+                <div class="txt font-text text-8xl font-bold w-full hidden-right text-center">
+                    1988
+                </div>
+
+                <!-- <div class="linha-do-tempo-line h-full w-1 bg-gray-50/55 hidden lg:flex"></div> -->
+
+                <div class="img w-full flex flex-col gap-4 hidden-right px-1">
+                    <img src="./imgs/linha-do-tempo-IPCC.png"
+                        alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
+                    <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
+                        A
+                        ONU cria o IPCC (Painel
+                        Intergovernamental sobre Mudanças Climáticas) para estudar e informar sobre as mudanças
+                        climáticas.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white">
+            <section class="w-full flex gap-10 flex-col items-center lg:flex-row">
+                <div class="img w-full flex flex-col gap-4 hidden-left order-3 lg:order-1 px-1">
+                    <img src="./imgs/linha-do-tempo-kyoto.png"
+                        alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
+                    <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
+                        O
+                        Protocolo de Kyoto estabelece
+                        metas para
+                        redução das emissões de gases de efeito estufa em 5,2%, marcando um compromisso
+                        internacional
+                        contra a crise climática.</p>
+                </div>
+
+                <!-- <div class="linha-do-tempo-line h-full w-1 bg-gray-50/55 hidden lg:flex lg:order-1 "></div> -->
+
+                <div class="txt font-text text-8xl font-bold w-full hidden-left order-first lg:order-1 text-center">
+                    1997
+                </div>
+            </section>
+        </div>
+
+        <section class="max-w-full flex flex-col mt-12 items-center justify-center gap-4 px-4 xl:px-4">
+            <h1
+                class="text-main-green w-full font-bold font-text text-6xl text-center lg:text-9xl lg:mt-8 2xl:text-center">
+                PRESENTE</h1>
+            <p class="text-gray-200/90 font-text text-base text-center lg:text-left xl:text-start xl:text-lg">O
+                protocolo de Kyoto não foi
+                ratificado pelos Estados
+                Unidos e
+                depois foi substituído pelo acordo de Paris. EM 04/11/2020 os EUA saíram do acordo de Paris e só
+                retornaram em 2021.
+                Atualmente, a Terra está cerca de 1,5 °C mais quente do que no final do século XIX, e as
+                emissões de
+                gases de efeito estufa estão nos níveis mais altos em 2 milhões de anos.
+                A ONU alerta que, sem medidas concretas, o mundo pode chegar a um aumento de <span
+                    class="font-bold">3°C.</span></p>
+            <p class="text-gray-200/90 font-text text-base text-center lg:text-start xl:w-full xl:text-lg"> A baixo,
+                temos um gráfico que
+                ilustra a projeção para o aumento da tempertura média global, em relação à média existente durante o
+                período pré-industrial:</p>
+        </section>
+
+        <section class="chart-container max-w-full flex flex-col mt-12 items-center justify-center gap-4 p-4">
+            <canvas id="line-chart"></canvas>
+
+            <p class="text-gray-200/90 font-text text-base text-center lg:text-left xl:text-lg"> Nele podemos ver em
+                primeira
+                instância, o limite de temperatura imposto pelo acordo de Paris, sendo que esse mesmo limite
+                (preferencialemente sendo de abaixo de 1,5°C), deveria se sustentar até 2100. Contudo, vemos que já no
+                ano de 2024, estamos acima do desejável, sendo que, de acordo com projeções, atinigiremos o limite de
+                2100 em torno de 70 anos antes. Além disso, se o cenário de emissões se manter <span
+                    class="font-bold">intermediário</span>, teremos o terrível número apontado em 2050. Em cenários mais
+                pessimistas, de <span class="font-bold">emissões altas</span>, poderemos chegar ao número de <span
+                    class="font-bold">5,7°C</span> acima dos níveis pré-industriais.</p>
+        </section>
+
+    </div>
+
+    <section class="max-w-7xl max-h-auto py-32 flex flex-row font-text text-center md:px-8 2xl:max-w-full">
+        <div class="max-w-7xl px-2 mx-auto flex flex-col justify-start gap-4 items-start lg:text-left">
+            <h1 class="font-bold text-4xl text-white sm:text-5xl xl:text-6xl">POR ISSO, NÓS DA VOLTARIS DECIDIMOS QUE:
+            </h1>
+            <p class="text-gray-200/90 font-text text-base xl:text-lg">Toda população deve estar ciente quais são as
+                consequências que
+                iremos enfrentar,
+                mas principalmente como podemos <span class="text-white">REVERTER</span> essa situação e
+                garantir um
+                futuro melhor para nós mesmos e
+                para as próximas gerações.</p>
+            <p class="text-gray-200/90 font-text text-base xl:text-lg">Com isso em mente, disponibilizamos cursos de
+                curta
+                duração
+                (Curtos mesmo) de até 3 horas, com documentários, vídeos curtos e jogos interativos que
+                promovem
+                ações sustentáveis que melhoram nosso consumo de energia no dia a dia, para qualquer um de
+                nós
+                colocar em prática e fazer a diferença nas nossas comunidades. </p>
+        </div>
+    </section>
+    </section>
+
+    <section class="flex flex-col max-w-full pt-10 pb-10 items-center justify-center bg-main-green rounded-t-3xl"
+        id="cursos">
+        <div class="max-w-7xl max-h-auto py-5 flex flex-row font-text">
+            <div class="max-w-full flex flex-col gap-12 lg:items-center">
+                <h1 class="font-title font-semibold text-3xl px-1 text-center md:text-5xl lg:text-left">
+                    PARTICIPE E CONCLUA OS CURSOS PARA
+                    RECEBER
+                    UMA ECOBAG,
+                    NECESSAIRE E UMA MUDA DE PLANTA!! </h1>
+
+                <p class="text-second-green font-text text-xl px-3 text-center md:text-2xl lg:text-left">
+                    Preencha o formulário abaixo para nos conhecermos melhor e receber acesso aos cursos! Conclua nossa
+                    trilha de cursos para receber os brindes e um certificado de participação para colocar no currículo
+                    e compartilhar nas redes sociais.</p>
+
+                <div
+                    class="flex xl:flex-row max-w-full items-center px-4 w-full flex-col sm:px-4 md:px-16 lg:justify-center lg:max-w-5xl lg:items-center xl:justify-between xl:items-center 2xl:gap-8">
+                    <div
+                        class="form-bg-yellow w-full py-5 px-12 flex flex-col items-start justify-center gap-4 mx-4 2xl:w-full">
+                        <h1 class="text-black text-center w-full font-bold text-xl text-wrap">Calculadora de Pegada de
+                            Carbono</h1>
+                            <form 
+                            action="http://127.0.0.1:5000/calcular-pegada" 
+                            method="POST" 
+                            class="flex flex-col max-w-full gap-3 w-full items-center justify-center">
+
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Nome</p>
+
+                            <input type="text" name="nome-funcionario" placeholder="Igor guilherme" value=""
+                                class="w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green"
+                                required>
+
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Tipo de Transporte
+                            </p>
+
+                            <select id="transporte" name="transporte"
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
+                                <option value="carro" class="hover:bg-main-green focus:bg-main-green">Carro</option>
+                                <option value="transporte público">Transporte Público</option>
+                                <option value="bicicleta">Bicicleta</option>
+                            </select>
+
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Consumo de Energia
+                                (kWh/mês)</p>
+
+                            <input type="number" id="energia" name="energia" required
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
+
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Tipo de
+                                alimentação</p>
+
+                            <select id="alimentacao" name="alimentacao"
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
+                                <option value="carnivoro">Carnívoro</option>
+                                <option value="vegetariano">Vegetariano</option>
+                            </select>
+
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Quantidade de
+                                Resíduos (kg/mês)</p>
+
+                            <input type="number" id="residuos" name="residuos" required
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
+
+                            <button type="submit"
+                                class="w-full transition-all py-3 mt-4 border border-second-green bg-second-green text-white font-bold rounded-2xl hover:border hover:border-second-green hover:text-black focus:outline-none hover:bg-transparent">Calcular
+                                Pegada de Carbono</button>
+                        </form>
+                    </div>
+
+                    <div class="grid-rows-2 grid-flow-col gap-4 hidden xl:grid 2xl:w-full">
+                        <div class="row-span-1">
+                            <img src="./imgs/mockup-ecobag-voltaris-green-section.png"
+                                alt="mockup voltaris na ecobag branca" class="h-full w-full">
+                        </div>
+
+                        <div class="">
+                            <img src="./imgs/img-planta-green-section.png"
+                                alt="imagem de uma mao segurando um vaso com uma planta" class="h-full w-full">
+                        </div>
+
+                        <div class="row-span-2">
+                            <img src="./imgs/mockup-voltaris-necessaire-green-section.png" alt="" class="h-full w-full">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col max-w-full pt-10 pb-10 items-center justify-between form-container-bg">
+        <section class="max-w-7xl max-h-auto py-32 flex flex-row font-text">
+            <div class="max-w-full mx-auto flex flex-col justify-start gap-4 items-start">
+                <h1 class="text-main-green max-w-full font-title sm:text-5xl text-4xl text-center 2xl:text-6xl">Para
+                    empresas
+                    interessadas em fazer a
+                    diferença:
+                    <span class="text-white"> preencha o formulário de contato abaixo.</span>
+                </h1>
+            </div>
+        </section>
+
+        <section class="flex gap-10 flex-col px-4 2xl:flex-row 2xl:mb-8 max-w-full xl:flex-row" id="contato">
+            <div
+                class="form-bg py-5 px-12 flex flex-col items-start justify-center gap-4 border border-yellow-600 max-w-full 2xl:w-1/2">
+                <h1 class="text-main-green w-full font-bold text-xl text-nowrap">Preencha o formulário</h1>
+                <form class="flex flex-col gap-3 w-full items-center justify-center max-w-full">
+
+                    <p class="font-text text-base text-white w-full text-start">Nome do funcionário</p>
+
+                    <input type="text" name="nome-funcionario" placeholder="Igor guilherme" value=""
+                        class="w-full p-3 border border-main-green rounded-2xl bg-transparent text-white placeholder:text-gray-200/50 focus:outline-none focus:border-main-green"
+                        required>
+
+                    <p class="font-text text-base text-white w-full text-start">Nome da Empresa</p>
+
+                    <input type="text" name="nome-empresa" placeholder="Ex: fiap"
+                        class="w-full p-3 border border-main-green rounded-2xl bg-transparent text-white placeholder:text-gray-200/50 focus:outline-none focus:border-main-green"
+                        required>
+
+                    <p class="font-text text-base text-white w-full text-start">Email</p>
+
+                    <input type="email" name="email" placeholder="Ex: guilhermesergio4m@..."
+                        class="w-full p-3 border border-main-green rounded-2xl bg-transparent text-white placeholder:text-gray-200/50 focus:outline-none focus:border-main-green"
+                        required>
+
+                    <p class="font-text text-base text-white w-full text-start">CNPJ</p>
+
+                    <input type="text" name="cnpj" placeholder="764.555.888-32"
+                        class="w-full p-3 border border-main-green rounded-2xl bg-transparent text-white placeholder:text-gray-200/50 focus:outline-none focus:border-main-green"
+                        required>
+
+                    <button type="submit"
+                        class="w-full border border-main-green transition-all py-3 mt-4 bg-main-green text-black font-bold rounded-2xl hover:border hover:border-main-green hover:text-white focus:outline-none hover:bg-transparent">Enviar</button>
+                </form>
+            </div>
+
+            <div class="max-w-xl flex flex-col items-center text-center leading-tight gap-4 justify-center">
+                <h1 class="font-title text-main-green font-bold text-xl sm:text-4xl">CONFIRA TAMBÉM NOSSAS REDES SOCIAIS
+                </h1>
+                <div class="flex flex-col gap-4">
+                    <p class="text-white font-bold text-2xl font-text">@voltarisorg</p>
+                    <div class="flex flex-row gap-5 transition-all">
+                        <a href=""><img src="./imgs/instagram-icon-green.png" alt="Icone Instagram verde"
+                                class="hover:scale-105"></a>
+                        <a href=""><img src="./imgs/linkedin-icon-green.png" alt="Icone Linkedin verde"
+                                class="hover:scale-105"></a>
+                        <a href=""><img src="./imgs/x--icon-green.png" alt="Icone X(twitter) verde"
+                                class="hover:scale-105"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="max-w-full bg-footer-gray rounded-t-xl -mt-2 flex flex-row p-5 justify-between">
+        <div class="flex flex-row items-end w-1/2 xl:w-full">
+            <img src="./imgs/voltaris-logo-white.png" alt=" Logo Voltaris branca" class="">
+            <p class="font-title text-white font-bold text-xl">Voltaris</p>
+        </div>
+        <div class="flex flex-row items-end gap-1 w-1/2 text-end xl:w-full">
+            <p class="text-white font-text text-base">Todos os direitos reservados © 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/sanduiche.js"></script>
+    <script src="./js/grafico.js"></script>
+
+</body>
+
+</html>
