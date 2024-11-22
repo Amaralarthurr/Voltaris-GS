@@ -9,6 +9,10 @@ module.exports = {
         'second-green': '#5e7f39',
         'footer-gray': '#484848'
       },
+      fontFamily: {
+        title: ["Michroma"],
+        text: ["Futura"]
+      }
     },
   },
   plugins: [],
