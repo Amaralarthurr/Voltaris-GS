@@ -290,7 +290,7 @@
     <section class="flex flex-col max-w-full pt-10 pb-10 items-center justify-center bg-main-green rounded-t-3xl"
         id="cursos">
         <div class="max-w-7xl max-h-auto py-5 flex flex-row font-text">
-            <div class="max-w-full flex flex-col gap-12">
+            <div class="max-w-full flex flex-col gap-12 lg:items-center">
                 <h1 class="font-title font-semibold text-4xl text-center md:text-5xl lg:text-left">
                     PARTICIPE E CONCLUA OS CURSOS PARA
                     RECEBER
@@ -303,14 +303,13 @@
                     e compartilhar nas redes sociais.</p>
 
                 <div
-                    class="flex xl:flex-row max-w-full flex-col px-4 lg:justify-center lg:items-center xl:items-start xl:justify-around">
+                    class="flex xl:flex-row max-w-full w-full flex-col sm:px-4 md:px-16 lg:justify-center lg:max-w-5xl lg:items-center xl:justify-between xl:items-center 2xl:gap-8">
                     <div
-                        class="form-bg-yellow py-5 px-12 flex flex-col items-start justify-center gap-4 lg:w-1/2 mx-4 2xl:w-1/3">
-                        <h1 class="text-black w-full font-bold text-xl text-nowrap">Preencha o formulário</h1>
+                        class="form-bg-yellow w-full py-5 px-12 flex flex-col items-start justify-center gap-4 mx-4 2xl:w-full">
+                        <h1 class="text-black text-center w-full font-bold text-xl text-wrap">Calculadora de Pegada de Carbono</h1>
                         <form class="flex flex-col max-w-full gap-3 w-full items-center justify-center">
 
-                            <p class="font-text font-semibold text-base text-black w-full text-start">Nome do
-                                funcionário</p>
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Nome</p>
 
                             <input type="text" name="nome-funcionario" placeholder="Igor guilherme" value=""
                                 class="w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green"
@@ -319,30 +318,41 @@
                             <p class="font-text font-semibold text-base text-black w-full text-start">Tipo de Transporte
                             </p>
 
-                            <input type="text" name="nome-empresa" placeholder="Ex: Bicicleta"
-                                class="w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green"
-                                required>
+                            <select id="transporte" name="transporte"
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
+                                <option value="carro" class="hover:bg-main-green focus:bg-main-green">Carro</option>
+                                <option value="transporte público">Transporte Público</option>
+                                <option value="bicicleta">Bicicleta</option>
+                            </select>
+
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Consumo de Energia
+                                (kWh/mês)</p>
+
+                            <input type="number" id="energia" name="energia" required
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
 
                             <p class="font-text font-semibold text-base text-black w-full text-start">Tipo de
                                 alimentação</p>
 
-                            <input type="email" name="email" placeholder="Ex: Vegetariano"
-                                class="w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green"
-                                required>
+                            <select id="alimentacao" name="alimentacao"
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
+                                <option value="carnivoro">Carnívoro</option>
+                                <option value="vegetariano">Vegetariano</option>
+                            </select>
 
-                            <p class="font-text font-semibold text-base text-black w-full text-start">Email</p>
+                            <p class="font-text font-semibold text-base text-black w-full text-start">Quantidade de
+                                Resíduos (kg/mês)</p>
 
-                            <input type="text" name="cnpj" placeholder="Ex: guilhermesergio4m@..."
-                                class="w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green"
-                                required>
+                            <input type="number" id="residuos" name="residuos" required
+                                class="w-full max-w-full p-3 border border-second-green rounded-2xl bg-transparent backdrop-blur-sm text-black placeholder:text-black focus:outline-none focus:border-second-green">
 
                             <button type="submit"
-                                class="w-full transition-all py-3 mt-4 border border-second-green bg-second-green text-white font-bold rounded-2xl hover:border hover:border-second-green hover:text-black focus:outline-none hover:bg-transparent">Quero
-                                Participar!</button>
+                                class="w-full transition-all py-3 mt-4 border border-second-green bg-second-green text-white font-bold rounded-2xl hover:border hover:border-second-green hover:text-black focus:outline-none hover:bg-transparent">Calcular
+                                Pegada de Carbono</button>
                         </form>
                     </div>
 
-                    <div class="grid-rows-2 grid-flow-col gap-4 hidden xl:grid">
+                    <div class="grid-rows-2 grid-flow-col gap-4 hidden xl:grid 2xl:w-full">
                         <div class="row-span-1">
                             <img src="./src/imgs/mockup-ecobag-voltaris-green-section.png"
                                 alt="mockup voltaris na ecobag branca" class="h-full w-full">
@@ -354,8 +364,7 @@
                         </div>
 
                         <div class="row-span-2">
-                            <img src="./src/imgs/mockup-voltaris-necessaire-green-section.png" alt=""
-                                class="h-full w-full">
+                            <img src="./src/imgs/mockup-voltaris-necessaire-green-section.png" alt="" class="h-full w-full">
                         </div>
                     </div>
 
