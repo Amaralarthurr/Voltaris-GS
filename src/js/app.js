@@ -14,7 +14,6 @@ let isGeoLocation = false; // Variável de controle para identificar o fluxo
 // Função para inicializar a página
 window.onload = async () => {
     try {
-        console.log("caiu")
         await loadStates(); // Carrega estados para seleção
         await getUserLocation(); // Busca geolocalização do usuário
         await atualizarDados(); // Primeiro, atualiza os dados no banco
