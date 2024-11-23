@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "npx tailwindcss -i ./styles/styles.css -o ./src/css/styles.css --watch"
+    "dev": "npx tailwindcss -i ./styles/styles.css -o ./src/css/styles.css --watch",
+    "start-api":"python app.py"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.15"

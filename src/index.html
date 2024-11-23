@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page GS</title>
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="stylesheet" href="./src/css/scroll.css">
-    <link rel="stylesheet" href="./src/css/form.css">
-    <link rel="stylesheet" href="./src/css/arrow.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/arrow.css">
 </head>
 
 <body class="bg-dark-bg">
 
     <section class="max-w-full">
         <video class="absolute top-0 left-0 w-full h-full object-cover -z-10" autoplay muted loop>
-            <source src="./src/videos/bg-video-energy.mp4" type="video/mp4">
+            <source src="./videos/bg-video-energy.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
 
@@ -23,7 +23,7 @@
             <div class="max-w-7xl mx-auto flex items-center justify-between">
                 <!-- Logo -->
                 <div>
-                    <a href=""><img src="./src/imgs/Logo_voltaris_verde.png" alt="Logo voltaris verde"></a>
+                    <a href=""><img src="./imgs/Logo_voltaris_verde.png" alt="Logo voltaris verde"></a>
                 </div>
 
                 <!-- Menu para telas grandes -->
@@ -68,20 +68,20 @@
                 class="font-title px-2 text-xl leading-tight text-main-green text-wrap text-center md:text-3xl lg:text-4xl 2xl:text-5xl">
                 Juntos podemos renovar a maneira que consumimos energia!</p>
             <div class="hidden justify-start items-start md:flex">
-                <a href=""><img src="./src/imgs/seta-para-baixo-verde-menu-hero.png" alt="" class="arrow-down"></a>
+                <a href=""><img src="./imgs/seta-para-baixo-verde-menu-hero.png" alt="" class="arrow-down"></a>
             </div>
         </div>
     </section>
 
     <section class="max-w-full max-h-auto bg-dark-bg pt-24 flex flex-row justify-around" id="transicaoEnergetica">
         <div
-            class="max-w-7xl mx-auto flex gap-4 items-center flex-col text-center lg:text-left lg:w-3/4 2xl:flex-row xl:w-full xl:flex-row 2xl:items-center 2xl:gap-20">
+            class="sm:max-w-7xl mx-auto flex gap-4 items-center flex-col text-center lg:text-left lg:w-3/4 2xl:flex-row xl:w-full xl:flex-row 2xl:items-center 2xl:gap-20 max-w-full px-2 sm:px-4">
             <section
-                class=" text-white flex flex-col gap-8 mb-8 w-full text-center px-1 lg:text-start lg:px-4 2xl:justify-center">
+                class=" text-white flex flex-col gap-8 mb-8 w-full text-center px-1 lg:text-start lg:px-4 2xl:justify-center max-w-full">
 
                 <h1 class="font-title text-4xl font-bold w-full sm:text-5xl">Transição Energética</h1>
 
-                <div class="font-text text-xl flex flex-col gap-5 text-gray-200/90 w-full lg:w-full">
+                <div class="font-text text-lg flex flex-col gap-5 text-gray-200/90 max-w-full lg:w-full">
                     <p>A transição energética dos combustíveis fósseis para fontes sustentáveis representa uma
                         mudança
                         essencial para garantir o futuro do nosso planeta. Diante do impacto ambiental dos combustíveis
@@ -107,10 +107,38 @@
                 </div>
             </section>
 
-            <section class="w-full hidden xl:flex justify-center">
-                <img src="./src/imgs/transicao-energetica-ilustracao.png"
-                    alt="Imagem Ilustrada sobre a transição enerrgética e seu ecossistema. sol, prédios, casas, energia eólica, energia solar.">
-            </section>
+            <div class="form-bg py-5 flex flex-col items-start justify-center gap-4 max-w-full 2xl:w-1/2 px-4 sm:w-full sm:px-6">
+                <h1 class="text-main-green w-full font-bold text-xl text-wrap">Consulta de Qualidade do Ar</h1>
+                <form class="flex flex-col gap-6 w-full items-center justify-center max-w-full">
+
+                    <p class="font-text text-base text-white w-full text-start" for="state">Escolha um Estado:</p>
+
+                    <select id="state" name="state"
+                        class="w-full p-2 text-lg border border-main-green rounded-xl bg-transparent text-gray-200/50 focus:border-main-green mb-2">
+                        <option value="">Selecione um estado</option>
+                    </select>
+
+                    <p class="font-text text-base text-white w-full text-start">Escolha uma Cidade:</p>
+
+                    <select id="city" name="city" disabled
+                        class="w-full p-2 text-lg border border-main-green rounded-xl bg-transparent text-gray-200/50 focus:border-main-green mb-2">
+                        <option value="">Selecione uma cidade</option>
+                    </select>
+
+                    <button id="search" disabled
+                        class="w-full border border-main-green transition-all py-3 mt-4 bg-main-green text-black font-bold rounded-2xl hover:border hover:border-main-green
+                         hover:text-white focus:outline-none hover:bg-transparent">
+                        Buscar Qualidade do Ar
+                    </button>
+
+                    <div id="result" class=" text-white max-w-full gap-4 text-base text-start w-full result hidden">
+                        <h2 class="font-text mb-2">Resultado:</h2>
+                        <p id="air-quality" class="font-text"></p>
+                    </div>
+
+                    <div id="error" class="error hidden mt-6 p-4 font-text bg-red-100 border border-red-500 text-red-700 rounded"></div>
+                </form>
+            </div>
 
         </div>
     </section>
@@ -119,7 +147,8 @@
         <div class="max-w-7xl mx-auto flex justify-between gap-4 items-center">
             <div class="gap-2 flex flex-col mt-32 text-white text-center md:p-2 px-1">
                 <h1 class="text-5xl font-title lg:text-6xl">Sobre <span class="text-main-green">nós</span></h1>
-                <p class="text-base text-gray-200/90 p-3 lg:text-xl">A VOLTARIS surgiu em 2024, buscando uma solução para
+                <p class="text-base text-gray-200/90 p-3 lg:text-xl">A VOLTARIS surgiu em 2024, buscando uma solução
+                    para
                     conscientizar
                     o máximo de pessoas sobre os fatos abaixo:</p>
             </div>
@@ -132,7 +161,7 @@
             <section class="w-full flex flex-col gap-10 items-center lg:flex-row">
                 <div
                     class="img w-full flex flex-col gap-4 hidden-left px-1 sm:justify-center order-last lg:order-first">
-                    <img src="./src/imgs/linha-do-tempo-fourier.png"
+                    <img src="./imgs/linha-do-tempo-fourier.png"
                         alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
                     <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
                         Joseph Fourier descreve o "efeito estufa" como um fenômeno natural que mantém a Terra aquecida,
@@ -156,7 +185,7 @@
                 <!-- <div class="linha-do-tempo-line h-full w-1 bg-gray-50/55 hidden lg:flex"></div> -->
 
                 <div class="img w-full flex flex-col gap-4 hidden-right px-1">
-                    <img src="./src/imgs/linha-do-tempo-svante-arrhenius.png"
+                    <img src="./imgs/linha-do-tempo-svante-arrhenius.png"
                         alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
                     <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
                         Svante Arrhenius identifica que a queima de carvão aumenta o efeito estufa, sugerindo que isso
@@ -168,7 +197,7 @@
         <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white ">
             <section class="w-full flex gap-10 flex-col items-center lg:flex-row">
                 <div class="img w-full flex flex-col gap-4 hidden-left order-3 lg:order-1 px-1">
-                    <img src="./src/imgs/linha-do-tempo-efeito-estufa.png"
+                    <img src="./imgs/linha-do-tempo-efeito-estufa.png"
                         alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
                     <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
                         Joseph Fourier descreve o "efeito
@@ -194,7 +223,7 @@
                 <!-- <div class="linha-do-tempo-line h-full w-1 bg-gray-50/55 hidden lg:flex"></div> -->
 
                 <div class="img w-full flex flex-col gap-4 hidden-right px-1">
-                    <img src="./src/imgs/linha-do-tempo-IPCC.png"
+                    <img src="./imgs/linha-do-tempo-IPCC.png"
                         alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
                     <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
                         A
@@ -208,7 +237,7 @@
         <div class="max-w-7xl mx-auto flex flex-row justify-between gap-5 text-white">
             <section class="w-full flex gap-10 flex-col items-center lg:flex-row">
                 <div class="img w-full flex flex-col gap-4 hidden-left order-3 lg:order-1 px-1">
-                    <img src="./src/imgs/linha-do-tempo-kyoto.png"
+                    <img src="./imgs/linha-do-tempo-kyoto.png"
                         alt="Imagem de Joseph Fourier, que descreveu o efeito estufa" class="max-w-full">
                     <p class="font-text max-w-lg text-gray-200/90 text-center 2xl:text-left text-sm md:text-base">
                         O
@@ -306,8 +335,12 @@
                     class="flex xl:flex-row max-w-full items-center px-4 w-full flex-col sm:px-4 md:px-16 lg:justify-center lg:max-w-5xl lg:items-center xl:justify-between xl:items-center 2xl:gap-8">
                     <div
                         class="form-bg-yellow w-full py-5 px-12 flex flex-col items-start justify-center gap-4 mx-4 2xl:w-full">
-                        <h1 class="text-black text-center w-full font-bold text-xl text-wrap">Calculadora de Pegada de Carbono</h1>
-                        <form class="flex flex-col max-w-full gap-3 w-full items-center justify-center">
+                        <h1 class="text-black text-center w-full font-bold text-xl text-wrap">Calculadora de Pegada de
+                            Carbono</h1>
+                            <form 
+                            action="http://127.0.0.1:5000/calcular-pegada" 
+                            method="POST" 
+                            class="flex flex-col max-w-full gap-3 w-full items-center justify-center">
 
                             <p class="font-text font-semibold text-base text-black w-full text-start">Nome</p>
 
@@ -354,17 +387,17 @@
 
                     <div class="grid-rows-2 grid-flow-col gap-4 hidden xl:grid 2xl:w-full">
                         <div class="row-span-1">
-                            <img src="./src/imgs/mockup-ecobag-voltaris-green-section.png"
+                            <img src="./imgs/mockup-ecobag-voltaris-green-section.png"
                                 alt="mockup voltaris na ecobag branca" class="h-full w-full">
                         </div>
 
                         <div class="">
-                            <img src="./src/imgs/img-planta-green-section.png"
+                            <img src="./imgs/img-planta-green-section.png"
                                 alt="imagem de uma mao segurando um vaso com uma planta" class="h-full w-full">
                         </div>
 
                         <div class="row-span-2">
-                            <img src="./src/imgs/mockup-voltaris-necessaire-green-section.png" alt="" class="h-full w-full">
+                            <img src="./imgs/mockup-voltaris-necessaire-green-section.png" alt="" class="h-full w-full">
                         </div>
                     </div>
 
@@ -376,7 +409,8 @@
     <section class="flex flex-col max-w-full pt-10 pb-10 items-center justify-between form-container-bg">
         <section class="max-w-7xl max-h-auto py-32 flex flex-row font-text">
             <div class="max-w-full mx-auto flex flex-col justify-start gap-4 items-start">
-                <h1 class="text-main-green max-w-full font-title sm:text-5xl text-4xl text-center 2xl:text-6xl">Para empresas
+                <h1 class="text-main-green max-w-full font-title sm:text-5xl text-4xl text-center 2xl:text-6xl">Para
+                    empresas
                     interessadas em fazer a
                     diferença:
                     <span class="text-white"> preencha o formulário de contato abaixo.</span>
@@ -425,11 +459,11 @@
                 <div class="flex flex-col gap-4">
                     <p class="text-white font-bold text-2xl font-text">@voltarisorg</p>
                     <div class="flex flex-row gap-5 transition-all">
-                        <a href=""><img src="./src/imgs/instagram-icon-green.png" alt="Icone Instagram verde"
+                        <a href=""><img src="./imgs/instagram-icon-green.png" alt="Icone Instagram verde"
                                 class="hover:scale-105"></a>
-                        <a href=""><img src="./src/imgs/linkedin-icon-green.png" alt="Icone Linkedin verde"
+                        <a href=""><img src="./imgs/linkedin-icon-green.png" alt="Icone Linkedin verde"
                                 class="hover:scale-105"></a>
-                        <a href=""><img src="./src/imgs/x--icon-green.png" alt="Icone X(twitter) verde"
+                        <a href=""><img src="./imgs/x--icon-green.png" alt="Icone X(twitter) verde"
                                 class="hover:scale-105"></a>
                     </div>
                 </div>
@@ -439,7 +473,7 @@
 
     <footer class="max-w-full bg-footer-gray rounded-t-xl -mt-2 flex flex-row p-5 justify-between">
         <div class="flex flex-row items-end w-1/2 xl:w-full">
-            <img src="./src/imgs/voltaris-logo-white.png" alt=" Logo Voltaris branca" class="">
+            <img src="./imgs/voltaris-logo-white.png" alt=" Logo Voltaris branca" class="">
             <p class="font-title text-white font-bold text-xl">Voltaris</p>
         </div>
         <div class="flex flex-row items-end gap-1 w-1/2 text-end xl:w-full">
@@ -448,9 +482,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./src/js/scroll.js"></script>
-    <script src="./src/js/sanduiche.js"></script>
-    <script src="./src/js/grafico.js"></script>
+    <script src="./js/app.js" ></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/sanduiche.js"></script>
 
 </body>
 
